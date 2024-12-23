@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title >Главная страница</title>
+    <link rel="stylesheet" href="styles.css" /> <!--подключаю css-->
+    <!--link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/x-icon"--> 
+    <!--link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png"-->
+    <!--link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png"-->
+</head>
+<body>
+    <header>
+        <div class="logo">   <!-- создаю блок с лого-->
+            <img src="img/logo.png" alt="Логотип" id="Главная"/> 
+        </div>
+        <div class="me">         <!-- создаю блок с группой и менем-->
+             <p> Группа: ЭФБ0-09-23Б</p>
+             <p> Черников Григорий Викторович</p>
+        </div>
+        <nav class="main">
+        <ul class="main"> <!--создавю главное меню-->
+            <li><a href="#Главная">Главное</a></li> <!-- ссылка по id-->
+            <li><a href="index2.html">Первый семестр</a></li> <!-- на будущее-->
+            <li><a href="#home">Второй семестр</a></li>
+            <li><a href="index2.html#услуги" target="_blank">Услуги</a></li>
+            <li><a href="#home">Авторизация</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <div class="info">
+        <aside>
+            <h4 class="h">Навигация по странице</h4>
+            <ul>
+                <li><a href="#lk">Лекции</a></li> <!-- ссылка по id-->
+                <li><a href="#sem">Практики</a></li>
+                <li><a href="#adress">Адресс</a></li>
+                <li><a href="#prog">Рабочая программа</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h1 class="h" id="Первый">Первый Семестр</h1>
+            <h2 id="lk">Лекции</h2>
+            <div class="table">
+                <table id="lecture-table">
+                    <tr>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Тема</th>
+                        <th scope="col">Посещение</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox" name="attendance"/></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Углубленное изучение HTML</td>
+                        <td><input type="checkbox" name="attendance"/></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Основы работы CSS</td>
+                        <td><input type="checkbox" name="attendance"/></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Адаптивная вёрстка. Flexbox и Grid Layout</td>
+                        <td><input type="checkbox" name="attendance"/></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Bootstrap - работа с фреймворками</td>
+                        <td><input type="checkbox" name="attendance"/></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox" name="attendance"/></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Работа с DOM и событиями в JavaScript</td>
+                        <td><input type="checkbox" name="attendance"/></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Введение в GitHub и GitHub Pages</td>
+                        <td><input type="checkbox" name="attendance"/></td>
+                    </tr>
+                </table>
+            </div>
+            <button id="show-lecture-table-btn">Кнопка</button>
+            <h2 id="sem">Практики</h2>
+            <div class="table">
+            <table id="semester-table">
+                <tr>
+                    <th scope="col">Номер</th>
+                    <th scope="col">Тема</th>
+                    <th scope="col" ><div class="sdvig">Посещение</div></th>
+                    <th scope="col" ><div class="sdvig">Выпонение</div></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Основы языка HTMLL</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Формы и кнопки в HTML</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Таблицы и интерактивные элементы HTML</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Работа с классами в CSS</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Работа с сетками и разметкой в HTML</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Адаптивная вёрстка</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bootstrap</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Основы языка JavaScript</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Базовые задачи на JS</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>DOM-структура приложений и работа <p>с объектами в языке JS</p></td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Встраивание скриптов</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Отладка сценариев</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Анимации и работа с ними</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Github</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Защита проекта</td>
+                    <td><input type="checkbox" name="attendance"/></td>
+                    <td><input type="checkbox" name="complete"/></td>
+                </tr>
+            </table>
+            <button id="second-semester-btn">Второй сем</button>
+            </div>
+            <h2 id="adress">Адресс вуза</h2>
+            <p>Занятия проходят по адрессу: г.Москва пр-т Вернадского 78</p>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.483539%2C55.669217&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjE2ODgxOTM5EkfQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0L_RgNC-0YHQv9C10LrRgiDQktC10YDQvdCw0LTRgdC60L7Qs9C-LCA3OCIKDePrFUIVC65eQg%2C%2C&sctx=ZAAAAAgAEAAaKAoSCec4twn33kNAEWba%2FpWVUEtAEhIJ7gc8MIDw1j8RRZ%2BPMuICwD8iBgABAgMEBSgKOABAgoUGSAFiPnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vTmVhcmJ5U2VhcmNoL1Jlc2V0SWZXaW5kb3dEcmFnZ2VkQXdheT0xYjhyZWFycj1zY2hlbWVfTG9jYWwvR2VvL05lYXJieVNlYXJjaC9EaXNwbGF5SW5GaWx0ZXJTZXQ9MWIucmVhcnI9c2NoZW1lX0xvY2FsL0dlby9OZWFyYnlTZWFyY2gvQXNGaWx0ZXI9MWIwcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9FbXB0eVJlc3VsdFdpbmRvd0lmRHJhZz0xYkByZWFycj1zY2hlbWVfTG9jYWwvR2VvL05lYXJieVNlYXJjaC9Nb3ZlV2luZG93QXRGaXJzdEZpbHRlcmluZz0xYjJyZWFycj1zY2hlbWVfTG9jYWwvR2VvL05lYXJieVNlYXJjaC9Tb3J0RGlzdGFuY2U9MWoCcnWdAc3MzD2gAQCoAQC9AZYohIHCAQoAAAAAAAAAAAAAggIq0L%2FRgNC%2B0YHQv9C10LrRgiDQstC10YDQvdCw0LTRgdC60L7Qs9C%2BIDc4igIAkgIAmgIMZGVza3RvcC1tYXBz&sll=37.481365%2C55.669560&sspn=0.004152%2C0.002233&text=%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%B2%D0%B5%D1%80%D0%BD%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2078&z=16.37" width="560" height="400" frameborder="1" allowfullscreen="true" ></iframe>
+            <h2 id="prog">Рабочая программа</h2>
+            <object type="application/pdf" data="Рабочая программа.pdf" width="300" height="150"></object>
+        </main>
+    </div>
+    <footer>
+        <p>&copy;Черников Григорий Викторович 2024 Все права защищены.</p>
+        <ul class="social-links">
+            <li><a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img src="img/vk.jpg" alt="vkontakte" /></a></li>
+            <li> <a href="https://web.telegram.org" target="_blank" rel="noopener noreferrer"><img src="img/tg.jpg" alt="telegram" /></a></li>
+        </ul>
+    </footer> 
+    <script id="myScript" src="practice14.js"></script>                  
+</body>
+</html>

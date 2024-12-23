@@ -1,0 +1,42 @@
+<form class="modal" action="/my-handling-form-page" method="post">
+    <h1>Разработка веб-приложений</h1>
+    <p>Заполните эту форму и мы обязательно с вами свяжемся</p>
+    <table>
+        <tr><!--имя-->
+            <td><label for="name">Ваше ФИ:</label></td>
+            <td><input type="text" id="name" name="user_name" placeholder="Имя Фамилия" size="25" /></td>
+        </tr>
+        <tr><!--почта-->
+            <td><label for="email">E-mail:</label></td>
+            <td><input type="email" id="email" name="user_email" placeholder="Электронная почта" size="25" /></td>
+        </tr>
+        <tr><!--телефон-->
+            <td><label for="tel">Номер телефона:</label></td>
+            <td><input type="tel" step="0" id="tel" name="user_tel" placeholder="Номер телефона" size="25" /></td>
+        </tr>
+        <tr><!--страна-->
+            <td><label for="country"> Страна:</label></td>
+            <td>
+                <select id="country" name="country"> <!-- выбор из предложенного списка-->
+                    <option value="RU"> Россия </option> <!--список-->
+                    <option value="UK"> Англия </option>
+                    <option value="USA"> США </option>
+                </select>
+            </td>
+        </tr>
+        <tr><!--дата-->
+            <td><label for="date">Дата:</label></td>
+            <td><input type="date" id="date" name="now_day" placeholder="Дата" size="5" /></td>
+        </tr>
+        <tr><!--коментарий-->
+            <td><label for="msg">Комментарий:</label></td>
+            <td><textarea id="msg" name="user_message" placeholder="Комментарий" cols="50" rows="7"></textarea></td>
+        </tr>
+    </table>
+    <p>
+        <input type="checkbox" name="personal"/>Согласен на обработку персональных данных
+    </p>
+    <p>
+        <button type="submit">Отправить заявку</button>
+    </p>
+  </form>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css" /> 
+    <title >Главная страница</title>
+</head>
+<body>
+    <header>
+    </header>
+    <h1 id="h1">H1</h1>
+    <h2 id="h2">h2</h2>
+    <div>
+        <video  id="video" width="360" height="200" src="video/cat2.mp4" controls></video>
+    </div>
+    <button id="openModal3">Заказать</button>
+    <form class="modal">
+        <div class="modal-content">
+            <div class="close">x</div>
+            <h1>Разработка веб-приложений</h1>
+            <p>Заполните эту форму и мы обязательно с вами свяжемся</p>
+            <table>
+                <tr><!--имя-->
+                    <td><label for="UserName">Ваше ФИ:</label></td>
+                    <td><input type="text" id="UserName" name="user_name" placeholder="Имя Фамилия" size="25" required/></td>
+                </tr>
+                <tr><!--почта-->
+                    <td><label for="E_mail">E-mail:</label></td>
+                    <td><input type="email" id="E_mail" name="user_email" placeholder="Электронная почта" size="25" required/></td>
+                </tr>
+                <tr><!--телефон-->
+                    <td><label for="PhoneNumber">Номер телефона:</label></td>
+                    <td><input type="tel" step="0" id="PhoneNumber" name="user_tel" placeholder="Номер телефона" size="25" required/></td>
+                </tr>
+                <tr><!--страна-->
+                    <td><label for="UserCountryName"> Страна:</label></td>
+                    <td>
+                        <select id="UserCountryName" name="country"> <!-- выбор из предложенного списка-->
+                            <option value="RU"> Россия </option> <!--список-->
+                            <option value="UK"> Англия </option>
+                            <option value="USA"> США </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><!--дата-->
+                    <td><label for="CurrentDate">Дата:</label></td>
+                    <td><input type="date" id="CurrentDate" name="now_day" placeholder="Дата" size="5" required/></td>
+                </tr>
+                <tr><!--коментарий-->
+                    <td><label for="UserCommentary">Комментарий:</label></td>
+                    <td><textarea id="UserCommentary" name="user_message" placeholder="Комментарий" cols="30" rows="7"></textarea></td>
+                </tr>
+            </table>
+            <p>
+                <input type="checkbox" name="personal" required/>Согласен на обработку персональных данных
+            </p>
+            <p>
+                <button id="sub" type="submit">Отправить заявку</button>
+            </p>
+        </div>
+    </form>
+    <footer>
+    </footer>    
+    <script src="practice11.js"></script>   
+    <script>
+
+    </script>            
+</body>
+</html>

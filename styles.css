@@ -1,0 +1,273 @@
+
+
+#lecture-table{
+  display: none;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: rgb(251, 246, 169);
+}
+ul {
+    list-style-type: none;
+  }
+ a {
+    text-decoration: none;
+    color:black;
+  }
+  header{
+    background: rgb(255, 230, 113);
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 100;
+  }
+  a:hover{
+    text-decoration:underline;
+  }
+  .info{
+    display: flex;
+
+  }
+  .logo{
+    margin: 0px 2%;
+    float: left;
+  }
+  .me{
+    margin: 0 10px 0 80%;
+    text-align: right;
+    /*position: -webkit-sticky;
+    position: sticky;
+    top: -1px; */
+  }
+  .main{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  ul.main li{
+    font-size: 1.25em; 
+  }
+  ul li{ 
+    padding: 0 5px;
+    width: 14em;
+    text-align: center;
+  }
+  .info ul li{
+    text-align: left;
+  }
+  nav{
+    width: 100%;
+    border-top: 1px solid black;
+    background: rgb(255, 217, 113);
+}
+.info ul{
+    padding: 0;
+}
+.info li{
+    margin: 10px 0 0 0px;
+}
+main{
+    margin-left:20px;
+    width: 85%;
+}
+.h{
+    text-align: left;
+    padding-left: 15px;
+}
+aside{
+    height: auto;
+    width: 20%;
+    border-right:1px solid black ;
+}
+.container {
+    width: 100%;
+    overflow: hidden; /* Clear floats */
+}
+.text {
+    float: left; /* Обтекает изображение слева */
+    width: 70%; /* Задает ширину текста */
+}
+.image {
+    float: right; /* Обтекает текст справа */
+    width: 30%; /* Задает ширину изображения */
+    width: 300px;
+    height: 300px;
+    padding-left:10px ;
+    padding-top:5px ;
+}
+footer{
+    text-align: center;
+    border-bottom:1px solid black ;
+    border-top:1px solid black;
+} 
+div.fiches{
+    display: flex;
+}
+.social-links{
+    display: flex;
+    padding: 0 15px 0 95%
+}
+.social-links img{
+  width: 16px;
+  height: 16px;
+}
+.video{
+  text-align: center;
+}
+th{
+  text-align: left;
+}
+.lowfooter{
+  margin-top: 200px;
+}
+.grid-container{
+  display:grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 250px 250px;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+}
+.grid-image{
+  width: 90%;
+  height: 90%;
+}
+.flex-container{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.flex-image{
+  width: 30%;
+  height: 200px;
+}
+.flex-image img{
+  width: 100%;
+  height: 100%;
+}
+.flex-item{
+  padding: 5px;
+  width: 30%;
+}
+.test{
+  position: absolute;
+  top:500px;
+  left:245px;
+  z-index: 2;
+}
+.test img{
+  width: 32px;
+  height: 32px;
+}
+@media (min-width:768px) and (max-width:1500px)
+{
+  header
+  {
+    width: 100%;
+  }
+  body
+  {
+    width: 100%;
+  }
+  ul li{ 
+    padding: 0 5px;
+    width: 8em;
+    text-align: center;
+  }
+  .social-links{
+    padding: 0 15px 0 90%
+  }
+  .grid-container{
+    
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 300px 300px 300px;
+  }
+
+@media (min-width:768px) and (max-width:890px)
+{
+  ul li{ 
+    padding: 0 5px;
+    width: 6em;
+    text-align: center;
+  }
+}
+}
+@media (min-width:340px) and (max-width:1024px) {
+  .fiches
+  {
+  display:flex;
+  flex-wrap: wrap;
+  }
+  .fitches section
+  {
+    width: 100%;
+  }
+}
+@media (min-width:360px) and (max-width:767px){
+  ul li{ 
+    padding: 0 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .me
+  {
+    margin-left: 40%;
+  }
+  .info {
+    flex-wrap: wrap;
+  }
+  .info aside{
+    width:100%;
+    border-right:none;
+    border-bottom:1px solid black;
+  }
+  .info ul
+  {
+    margin-bottom: 5px;
+    display: flex;
+  }
+  .social-links{
+    padding: 0 15px 0 85%
+  }
+  h1
+  {
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1.25em;
+  }
+  .text{
+    float:none;
+  }
+  video{
+    max-width:100%;
+  }
+  main{
+    width: 100%;
+  }
+  .grid-container{
+    grid-template-columns: 90%;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px ;
+  }
+  .flex-image{
+    height: 100px;
+  }
+  iframe{
+    width: 80%;
+    height: 250px;
+  }
+  .table{
+    width: 98%;
+    overflow: scroll;
+  }
+}
+td p
+{
+  margin:0;
+}

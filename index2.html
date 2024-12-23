@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Главная страница</title>
+    <link rel="stylesheet" href="formstyle.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/x-icon"> <!--ссылка для создания в будущем иконки-->
+    <link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png"> 
+</head>
+<body>
+    <header>
+        <div class="logo">   <!-- создаю блок с лого-->
+            <img src="img/logo.png" alt="Логотип" id="Главная"/> 
+        </div>
+        <div class="me">         <!-- создаю блок с группой и менем-->
+             <p> Группа: ЭФБ0-09-23Б</p>
+             <p> Черников Григорий Викторович</p>
+        </div>
+        <nav class="main">
+            <ul class="main"> <!--создавю главное меню-->
+                <li><a href="#Главная">Главное</a></li> <!-- ссылка по id-->
+                <li><a href="FirstSem.html#Первый">Первый семестр</a></li> <!-- на будущее-->
+                <li><a href="#home">Второй семестр</a></li>
+                <li><a href="#услуги">Услуги</a></li>
+                <li><a href="#home">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="info">
+        <aside>
+            <h4 class="h">Навигация по странице</h4>
+            <ul>
+                <li><a href="index.html">Информация обо мне</a></li> <!-- ссылка по id-->
+                <li><a href="index.html">Фронтенд</a></li>
+                <li><a href="index.html">Бэкенд</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h1>Веб-разработка</h1>
+            <div class="fiches">
+                <section id="услуги">
+                    <h2 class="h">Сайт визитка</h2>
+                    <p>Небольшой сайт, состоящий из одной (или нескольких) веб-страниц и содержащий
+                    основную информацию об организации, частном лице, компании, товарах или услугах,
+                    прейскуранты, контактные данные.</p>
+                    <button id="openModal1">Заказать</button>
+                </section>
+
+                <section id="element2">
+                    <h2 class="h">Корпоративный сайт</h2>
+                    <p>Корпоративный сайт – это веб-сайт, созданный и поддерживаемый компанией или
+                    организацией для предоставления информации о своих продуктах и услугах, а иногда 
+                    и более подробной информации о компании, включая историю, миссию, цели, организационную
+                    структуру, социальную сферу и т.д. Корпоративные сайты используются для создания 
+                    и развития бренда и привлечения потенциальных клиентов.</p>
+                    <button id="openModal2">Заказать</button>
+                </section>
+
+                <section id="element3">
+                    <h2 class="h">Интернет магазин</h2>
+                    <p> Сайт, торгующий товарами посредством сети Интернет.
+                        Позволяет пользователям онлайн, в своём браузере или через мобильное приложение,
+                        сформировать заказ на покупку, выбрать способ оплаты и доставки заказа, оплатить 
+                        заказ. При этом продажа товаров осуществляется дистанционным способом и она
+                        накладывает ограничения на продаваемые товары.</p>
+                        <button id="openModal3">Заказать</button>
+                </section>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item"><div><img class="grid-image" src="img/item1.jpg"></div><div >Товар 1</div></div>
+                <div class="grid-item"><div ><img class="grid-image" src="img/item2.jpg"></div><div>Товар 2</div></div>
+                <div class="grid-item"><div ><img class="grid-image" src="img/item3.jpg"></div><div>Товар 3</div></div>
+                <div class="grid-item"><div><img class="grid-image" src="img/item1.jpg"></div><div >Товар 1</div></div>
+                <div class="grid-item"><div ><img class="grid-image" src="img/item2.jpg"></div><div>Товар 2</div></div>
+                <div class="grid-item"><div ><img class="grid-image" src="img/item3.jpg"></div><div>Товар 3</div></div>
+            </div>
+            <!-- <div class="flex-container">
+                <div class="flex-image"><img src="img/item1.jpg"></div>
+                <div class="flex-image"><img src="img/item2.jpg"></div>
+                <div class="flex-image"><img  src="img/item3.jpg"></div>
+                <div class="flex-item">Товар 1</div>
+                <div class="flex-item">Товар 2</div>
+                <div class="flex-item">Товар 3</div>
+            </div> -->
+        </main>
+        
+    </div>
+    <form class="modal" onsubmit="return true;">
+        <div class="modal-content">
+            <div class="close">x</div>
+            <h1>Разработка веб-приложений</h1>
+            <p>Заполните эту форму и мы обязательно с вами свяжемся</p>
+            <table>
+                <tr><!--имя-->
+                    <td><label for="UserName">Ваше ФИ:</label></td>
+                    <td><input type="text" id="UserName" name="user_name" placeholder="Имя Фамилия" size="25" required/></td>
+                </tr>
+                <tr><!--почта-->
+                    <td><label for="E_mail">E-mail:</label></td>
+                    <td><input type="email" id="E_mail" name="user_email" placeholder="Электронная почта" size="25" required/></td>
+                </tr>
+                <tr><!--телефон-->
+                    <td><label for="PhoneNumber">Номер телефона:</label></td>
+                    <td><input type="tel" step="0" id="PhoneNumber" name="user_tel" placeholder="Номер телефона" size="25" required/></td>
+                </tr>
+                <tr><!--страна-->
+                    <td><label for="UserCountryName"> Страна:</label></td>
+                    <td>
+                        <select id="UserCountryName" name="country"> <!-- выбор из предложенного списка-->
+                            <option value="RU"> Россия </option> <!--список-->
+                            <option value="UK"> Англия </option>
+                            <option value="USA"> США </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><!--дата-->
+                    <td><label for="CurrentDate">Дата:</label></td>
+                    <td><input type="date" id="CurrentDate" name="now_day" placeholder="Дата" size="5" required/></td>
+                </tr>
+                <tr><!--коментарий-->
+                    <td><label for="UserCommentary">Комментарий:</label></td>
+                    <td><textarea id="UserCommentary" name="user_message" placeholder="Комментарий" cols="30" rows="7"></textarea></td>
+                </tr>
+            </table>
+            <p>
+                <input type="checkbox" name="personal" required/>Согласен на обработку персональных данных
+            </p>
+            <p>
+                <button id="sub" type="submit">Отправить заявку</button>
+            </p>
+        </div>
+    </form>
+      <div id="successMessage" class="successMessage">
+        Запрос успешно отправлен
+      </div>
+    <footer class="lowfooter">
+        <p>&copy;Черников Григорий Викторович 2024 Все права защищены.</p>
+        <ul class="social-links">
+            <li><a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img src="img/vk.jpg" alt="vkontakte" /></a></li>
+            <li> <a href="https://web.telegram.org" target="_blank" rel="noopener noreferrer"><img src="img/tg.jpg" alt="telegram" /></a></li>
+        </ul>
+    </footer>
+<script src="index.js"></script>     
+<script id="myScript" src="practice14.js"></script>        
+</body>
+</html>

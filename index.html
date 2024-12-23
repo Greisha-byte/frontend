@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title >Главная страница</title>
+    <link rel="stylesheet" href="styles.css" /> <!--подключаю css-->
+    <!--link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/x-icon"--> 
+    <!--link rel="icon" href="img/favicon-16x16.png" sizes="16x16" type="image/png"-->
+    <!--link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png"-->
+</head>
+<body>
+    <header>
+        <div class="logo">   <!-- создаю блок с лого-->
+            <img src="img/logo.png" alt="Логотип" id="Главная"/> 
+        </div>
+        <div class="me">         <!-- создаю блок с группой и менем-->
+             <p> Группа: ЭФБO-09-23</p>
+             <p> Черников Григорий Викторович</p>
+        </div>
+        <nav class="main">
+        <ul class="main"> <!--создавю главное меню-->
+            <li><a href="#Главная">Главное</a></li> <!-- ссылка по id-->
+            <li><a href="FirstSem.html#Первый">Первый семестр</a></li> <!-- на будущее-->
+            <li><a href="#home">Второй семестр</a></li>
+            <li><a href="index2.html#услуги" target="_blank">Услуги</a></li>
+            <li><a href="#home">Авторизация</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <div class="info">
+        <aside>
+            <h4 class="h">Навигация по странице</h4>
+            <ul>
+                <li><a href="#я">Информация обо мне</a></li> <!-- ссылка по id-->
+                <li><a href="#фронт">Фронтенд</a></li>
+                <li><a href="#бек">Бэкенд</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h1 class="h" id="я">Добро пожаловать на мой сайт</h1>
+            <div class="container">
+                <div class="text">
+                    <p >Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик. 
+                        Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик.Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик.
+                        Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик.Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик.
+                        Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик.Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик.
+                        Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик.Меня зовут Черников Григорий Викторович и я начинающий веб-разработчик.
+                    </p>
+                </div>
+                <div class="image">
+                    <img id="student-photo" src="img/я.jpg" alt="Это я кот" title="я кот" height="252px" width="252px" />
+                </div>
+            </div>
+            
+            <h2 class="h" id ="фронт">Фронтенд</h2>
+            <p>Фронтенд (или коиентская часть) - это то, что видит пользователь. Он включает в себя все
+            визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст.
+            </p>
+            <div class="video">
+                <video  width="360" height="200" src="video/cat1.mp4" controls></video>
+            </div>
+            <h2 class="h" id="бек">Бэкенд</h2>
+            <p>Бэкенд (или серверная часть) - это "за кулисами" веб-приложения.</p>
+            <div class="video">
+                <video  width="360" height="200" src="video/cat2.mp4" controls></video>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy;Черников Григорий Викторович 2024 Все права защищены.</p>
+        <ul class="social-links">
+            <li><a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img src="img/vk.jpg" alt="vkontakte" /></a></li>
+            <li> <a href="https://web.telegram.org" target="_blank" rel="noopener noreferrer"><img src="img/tg.jpg" alt="telegram" /></a></li>
+        </ul>
+    </footer> 
+    <script id="myScript" src="practice14.js"></script>             
+</body>
+</html>
